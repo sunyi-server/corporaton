@@ -1,0 +1,402 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑";
+}
+
+li {
+	list-style: none;
+}
+
+.wrap {
+	margin: 0 auto;
+	background: #f3f5f9;
+	width: 1000px;
+	height: 1000px;
+}
+
+.left {
+	width: 260px;
+	height: 1000px;
+	background: #2a323e;
+	float: left;
+}
+
+h1 {
+	font-size: 36px;
+	padding-top: 70px;
+	color: #ffffff;
+	padding-left: 62px;
+}
+
+.content {
+	width: 116px;
+	height: 430px;
+	padding-left: 48px;
+	margin-top: 46px;
+}
+
+.picManage {
+	width: 130px;
+	height: 46px;
+}
+
+.picMange img {
+	vertical-align: middle;
+	float: left;
+}
+
+.picManage span {
+	font-size: 16px;
+	/*color:#ffffff;*/
+}
+
+.picManage a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+
+/*.picMange h4{font-size: 16px;color:#ffffff;}*/
+
+.CommunityMange {
+	width: 130px;
+	height: 46px;
+}
+
+.CommunityMange img {
+	vertical-align: middle;
+}
+
+.CommunityMange span {
+	font-size: 16px;
+	/*color:#ffffff;*/
+	font-weight: normal;
+}
+
+.CommunityMange a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.CommunityMange ul {
+	display: none;
+}
+
+.CommunityMange li {
+	font-size: 14px;
+	color: #ffffff;
+	font-weight: normal;
+	height: 30px;
+}
+
+.active1 {
+	display: block;
+}
+
+.herfMange {
+	width: 130px;
+	height: 46px;
+}
+
+.herfMange img {
+	vertical-align: middle;
+}
+
+.herfMange span {
+	font-size: 16px;
+	/*color:#ffffff;*/
+	font-weight: normal;
+}
+
+.herfMange a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.Manager {
+	width: 130px;
+	height: 46px;
+}
+
+.Manager img {
+	vertical-align: middle;
+}
+
+.Manager span {
+	font-size: 16px;
+	/*color:#ffffff;*/
+	font-weight: normal;
+}
+
+.Manager a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.Manager ul {
+	display: none;
+}
+
+.Manager li {
+	font-size: 14px;
+	color: #ffffff;
+	font-weight: normal;
+	height: 30px;
+}
+
+.exit {
+	width: 130px;
+	height: 46px;
+}
+
+.exit img {
+	vertical-align: middle;
+}
+
+.exit span {
+	font-size: 16px;
+	/*color:#ffffff;*/
+	font-weight: normal;
+}
+
+.exit a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.right {
+	width: 740px;
+	height: 1000px;
+	float: right;
+}
+
+.search {
+	float: right;
+	margin-right: 40px;
+	margin-top: 38px;
+	width: 300px;
+	margin-bottom: 20px;
+}
+
+#text {
+	width: 200px;
+	height: 36px;
+	border: 1px solid #c8cdd1;
+}
+
+#btn {
+	width: 70px;
+	height: 36px;
+	background: #00abff;
+	border: none;
+	margin-left: 10px;
+}
+
+.Info {
+	width: 738px;
+	height: 530px;
+	margin-left: 24px;
+	display: none;
+}
+
+.Info table {
+	width: 664px;
+	cellspacing: 0px;
+	border-bottom: 1px solid #dddddd;
+}
+
+.head {
+	width: 736px;
+	height: 60px;
+	border: 1px solid #dddddd;
+}
+
+.head th {
+	color: #323232;
+	font-size: 14px;
+	width: 80px;
+	height: 60px;
+	border: 1px solid #dddddd;
+	border-right: none;
+	border-bottom: none;
+}
+
+.head .in {
+	border-right: 1px solid #dddddd;
+}
+
+.head .peo {
+	width: 24px;
+	writing-mode: tb-rl;
+	font-size: 9px;
+	text-align: center;
+}
+
+.detail {
+	width: 736px;
+	height: 60px;
+	/*border-bottom:1px solid #dddddd;*/
+}
+
+.detail td {
+	text-align: center;
+	color: #666a6c;
+	font-size: 12px;
+	width: 60px;
+	height: 60px;
+	border: 1px solid #dddddd;
+	border-right: none;
+	border-bottom: none;
+}
+
+.detail .category {}
+
+.detail .in {
+	border-right: 1px solid #dddddd;
+}
+
+.detail .people {
+	width: 24px;
+}
+
+.detail td img {
+	display: block;
+	margin: 0 auto;
+}
+
+.detail .btn1 {
+	border: none;
+	background: #00abff;
+	color: #ffffff;
+	width: 34px;
+	height: 25px;
+	float: left;
+	font-size: 12px;
+}
+
+.detail .btn2 {
+	background: #d9524e;
+	border: none;
+	color: #ffffff;
+	width: 34px;
+	height: 25px;
+	float: right;
+	font-size: 12px;
+}
+
+
+/*鏂板缓绀惧洟*/
+
+.createCommunity {
+	width: 400px;
+	height: 300px;
+	border: 1px solid #dddddd;
+	margin: 120px auto;
+	display: none;
+}
+
+.createCommunity table {
+	width: 300px;
+	height: 200px;
+}
+
+.createCommunity tr {
+	width: 200px;
+	height: 30px;
+	margin: auto;
+}
+
+#CommName {}
+
+#CommCate {}
+
+#CommKey {}
+
+.createCommunity img {}
+
+#cre {
+	border: none;
+	background: #00abff;
+	width: 80px;
+	height: 30px;
+	margin-left: 20px;
+	margin-bottom: 6px;
+}
+
+#reset {
+	border: none;
+	background: #d9524e;
+	width: 80px;
+	height: 30px;
+	margin-right: 20px;
+	margin-bottom: 6px;
+}
+
+
+/*绠＄悊鍛樼鐞�/
+
+.ManagerForm {
+	width: 400px;
+	height: 300px;
+	/*border:1px solid #dddddd;*/
+	margin: 120px auto;
+	display: none;
+}
+
+.ManagerForm table {
+	width: 400px;
+	height: 200px;
+}
+
+.ManagerForm tr {
+	width: 200px;
+	height: 30px;
+	margin: auto;
+}
+
+.ManagerForm th {
+	font-size: 14px;
+	color: #323232;
+	text-align: center;
+	width: 80px;
+	height: 60px;
+	border: 1px solid #dddddd;
+	border-right: none;
+	border-bottom: none;
+}
+
+.ManagerForm td {
+	text-align: center;
+	color: #666a6c;
+	font-size: 12px;
+	width: 80px;
+	height: 60px;
+	border: 1px solid #dddddd;
+	border-right: none;
+	/*border-bottom: none;*/
+}
+
+.ManagerForm .in {
+	border-right: 1px solid #dddddd;
+}
+
+.ManagerForm .btn1 {
+	border: none;
+	background: #00abff;
+	color: #ffffff;
+	width: 40px;
+	height: 25px;
+	float: left;
+	font-size: 12px;
+}
+
+.ManagerForm .btn2 {
+	background: #d9524e;
+	border: none;
+	color: #ffffff;
+	width: 40px;
+	height: 25px;
+	float: right;
+	font-size: 12px;
+}

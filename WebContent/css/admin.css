@@ -1,0 +1,229 @@
+html,body,div,h3,a,span,input,button,img{
+	margin: 0px;
+	padding: 0px;
+	overflow: initial;
+}
+th,td{
+	text-align: center;
+}
+a{
+	color: #000000;
+	font-size:16px;
+}
+a:hover{
+	color:#108cee ;
+	text-decoration: none;
+    cursor: pointer;
+}
+.clear{
+	clear:both;
+}
+input{
+	height: 33px;
+	text-indent: 18px;
+	font:16px/33px "΢���ź�";
+	color: #c1c2c3;
+	border: 1px solid #d3d5d6;
+	margin-bottom:10px;
+}
+label{
+	margin-bottom:10px;
+}
+.wrapper{
+	width: 1000px;
+	margin: 0 auto;
+	margin-top: 60px;
+}
+/*�����*/
+.side-nav{
+	width: 211px;
+	height: 755px;
+	display: inline-block;
+	overflow: hidden;
+	color: #ffffff;
+	background:rgba(0,0,0,.8);
+	float: left;
+}
+.nav-first{
+	margin-top: 20px;
+	text-indent: 35px;
+	color: inherit;
+	font:18px/58px "΢���ź�";
+}
+.nav-first img{
+	margin-right:5px;
+}
+.nav-second{
+	line-height: 54px;
+	text-indent: 66px;
+	display: block;
+	color: #ffffff;
+	font-size:14px;
+}
+.nav-second img{
+	margin-right:7px;
+}
+.nav-second:hover{
+	background: url(../img/dianjiback.png);
+	font-size:16px;
+	transition:font-size 0.3s ease-in;
+}
+/*ҳ���������*/
+.info{
+	display: inline-block;
+	float:left;
+	margin-left: 12px;
+}
+/*select-large */
+.select-large{
+	height:85px;
+	padding-top: 29px;
+	margin-left:9px ;
+	text-align: right;
+	border-bottom:1.5px solid #e6e6e6 ;
+}
+/*.select-large input{
+	height: 33px;
+	text-indent: 18px;
+	font:16px/33px "΢���ź�";
+	color: #c1c2c3;
+	border: 1px solid #d3d5d6;
+}*/
+.select-large span{   
+	 width: 25px;
+    color: #484848;
+    display: inline-block;
+    text-align: center;
+}
+.select-large input:nth-child(1){
+	width: 263px;
+}
+.select-large input:nth-child(3){
+	width:154px;
+	background: url(../img/����.jpg) 127px center no-repeat;
+}
+.select-large input:nth-child(5){
+	width:154px;
+	background: url(../img/����.jpg) 127px center no-repeat;
+}
+.select-large input:nth-child(6){
+	width: 91px;
+    height: 36px;
+    margin-left: 5px;
+    font: 14px/35px "΢���ź�";
+    color: #FFFFFF;
+    text-indent: 5px;
+    background: #1c7ed7;
+}
+/*select-small start*/
+.select-small{
+	height: 70px;
+	text-align: right;
+    padding: 20px 0px 20px 0px;
+}
+.select-small select {
+    width: 150px;
+    height: 30px;
+    margin-left: 20px;
+}
+.select-small button{
+	width: 77px;
+	height: 31px;
+	margin-top: -5px;
+	margin-left: 5px;
+}
+.select-small span{
+	font-size: 15px;
+}
+/*form start*/
+.form{
+	width: 776px;
+	height: 555px;
+}
+.Table-header{
+	background: #474747;
+	color: #FFFFFF;
+	font: 15px/33px "΢���ź�";
+	text-align: center;
+}
+.revise{
+	color: #4594dc;
+}
+tbody img{
+	margin-right: 8px;
+}
+/*page-go start*/
+.page-go{
+	font: 14px/50px "΢���ź�";
+	text-indent: 35px;
+}
+.page-go span:nth-of-type(1){
+	color:#ca0000;
+}
+.go{
+	color: #2683c6;
+	font-size: 15px;
+}
+.page-go input{
+	width: 50px;
+	height: 29px;
+	margin: 0 10px;
+	color: #c1c2c3;
+	border: 1px solid #d3d5d6;
+}
+.page-go span:nth-of-type(3){
+	float: right;
+	margin-right: 35px;
+}
+.page-go span:nth-of-type(3)>a{
+	margin-left: 20px;
+}
+/*ģ̬�� start*/
+.bumen{
+	margin-bottom: 20px;
+}
+#myModal2 input[type=text]{
+	width: 400px;
+}
+/*�ϴ�ͼƬ*/
+
+.img-upload{
+	width: 150px;
+	height: 150px;
+	border: 1px dashed rgb(211, 213, 214);;
+	display:inline-block;
+}
+.label1{
+	float: left;
+}
+.textarea{
+	display: inline-block;
+	width: 400px;
+    margin-left: 30px;
+}
+/*ģ̬��end*/
+/*corporationMember  ׷��ģ̬�� start*/
+.modal-body label{
+	float:left;
+	width:100px;
+	margin-bottom:10px;
+}
+.textarea-add{
+	width:400px;
+	float:left;
+}
+.modal-body select{
+	width:300px;
+	height:33px;
+	margin-bottom:10px;
+	border:1px solid #d3d5d6;
+}
+.modal-body input{
+	width:300px;
+	margin-bottom:10px;
+}
+/*corporationMember  ׷��ģ̬��end*/
+/*妯℃�妗�start*/
+#myModal3 input[type=text]{
+	width: 400px;
+}

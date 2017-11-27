@@ -1,0 +1,63 @@
+
+.col{}
+.serach{width:400px;float:right;margin-bottom: 30px;}
+.serach input{width:200px;height:36px;border:1px solid #c8cdd1;}
+.serach button{width:70px;height:36px;border:none;border-radius:3px;background:#00abff;}
+.search .btn1{}
+.search .btn2{}
+/*社团管理样式*/
+.detail{width:740px;}
+.CommDetail{width:700px;display:none;}
+.CommDetail table{width:700px;border:1px solid #dddddd;border-top: none;border-left: none;}
+.CommDetail tr{}
+.CommDetail th{color:#323232;font-size:14px;width:80px;height:60px;border:1px solid #dddddd;
+border-right: none;border-bottom: none;}
+.CommDetail td{text-align:center;color:#666a6c;font-size:12px;width:80px;height:60px;
+border:1px solid #dddddd;border-right: none;border-bottom: none;}
+.CommDetail .people{width:24px;}
+.CommDetail .pic{width:36px;}
+.CommDetail .control{width:100px;}
+/*用户管理样式*/
+.UserDetail{width:700px;}
+.UserDetail table{width:700px;border:1px solid #dddddd;border-top: none;border-left: none;}
+.UserDetail tr{}
+.UserDetail th{color:#323232;font-size:14px;width:80px;height:60px;border:1px solid #dddddd;
+border-right: none;border-bottom: none;}
+.UserDetail td{text-align:center;color:#666a6c;font-size:12px;width:80px;height:60px;
+border:1px solid #dddddd;border-right: none;border-bottom: none;}
+.UserDetail .control{width:140px;}
+/*删除与修改键*/
+.check{border:none;background:#00abff;color:#ffffff;width:40px;height:30px;float:left;
+font-size: 12px;border-radius:3px;text-align: center;writing-mode:tb-lr;}
+.del{background:#d9524e;border:none;color:#ffffff;width:40px;height:30px;float:right;
+font-size: 12px;border-radius:3px;text-align: center;}
+.control{width:90px;}
+.bottom{width:740px;margin-top: 30px;}
+/*翻页信息*/
+.pages{width:400px;float:left;}
+.pages span{color:#333333;font-size: 12px;float: left;margin-right:10px;}
+.pages .fy{color:#00ABFF;}
+.pages a{text-decoration:none;color:red;}
+.pages input{width:32px;height:18px;border:1px solid #dddddd;}
+.page{width:300px;float:right;}
+.page span{color:#00ABFF;margin-right: 10px;cursor: pointer;}
+
+/*修改用户模态框的样式*/
+.modal{}
+.modal_userchange,.modal_addUser{width:580px;height:600px;border:1px solid #dddddd;visibility: hidden;
+z-index: 1000;	background:#f3f5f9;position: absolute;left:40px;top:80px;}			
+/*模态框的样式*/
+.Inpstyle{}
+.Inpstyle label{}
+.Inpstyle input{}
+.Inpstyle2{width:200px;margin-top:6px;margin-top:5px\9;float:left;}
+.Inpstyle2:focus{border:1px solid #198BD4;box-shadow:0 0 2px #198BD4;}
+.lab{float:left;text-align:right;padding-right:10px;width:75px;height:30px;font-size:16px;margin-top:10px;
+	clear:both;line-height:30px;font-family:"Hiragino Sans GB", "Microsoft Yahei";}			
+.Inpstyle{width:200px;height:34px;padding-left:5px;line-height:34px;border:1px solid #D7D7D7;background:#fff;
+	color:#333;border-radius:2px;font-family:Verdana, Tahoma, Arial;font-size:16px;ime-mode:disabled;}
+.checkBtn{position:absolute;left:120px;top:500px;}
+#checkBtn1,#checkBtn2{display:inline-block;margin-right: 22px;width:90px;float:left;height:41px;border-radius:4px;
+background:#149ecd;border:none;cursor:pointer;border-bottom:3px solid #0078b3;*border-bottom:none;color:#fff;
+font-size:16px;padding:0 10px;text-align:center;outline:none;font-family: "Microsoft Yahei",Arial, Helvetica, sans-serif;}			
+#checkBtn2{width:90px;}

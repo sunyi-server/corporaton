@@ -1,0 +1,113 @@
+/*user-info页面和cor-manage页面的样�*/
+.wrapper-user-info{
+	width: 1000px;
+	margin:80px auto;
+	margin-top: 59px;
+	border:1px solid #eaeaea;
+	overflow: hidden;
+	box-shadow: 5px 5px 20px rgba(0,0,0,.1);
+	}
+.wrapper-1{
+	width:769px;
+	margin-left:231px;
+}
+/*user-info-title start*/
+.user-info-title{
+	width: 1980px;
+	height:25px;
+	margin:17px 20px;
+	font: 16px/25px "微软雅黑";
+}
+.user-info-title label::before{
+	content:" ";
+	width: 3px;
+	height: 20px;
+	margin: 2px 6px;
+	float: left;
+	background: url(../img/user_title_img.jpg);
+}
+/*user-info-title end*/
+/*user-info-content start*/
+.user-info-content{
+}
+.user-img{
+	width: 122px;
+	height: 147px;
+	margin-left: 26px;
+	text-align: center;
+	color:#108cee;
+	font: 15px/20px "微软雅黑";
+	float: left;
+}
+.user-img img{
+	width: 122px;
+	height: 122px;
+}
+.user-img a{
+	font: 15px/20px "微软雅黑";
+}
+.user-img a:hover{
+	text-decoration: none;
+	color: #50aaf1;
+	cursor: pointer;
+}
+.user-info{
+	width:500px ;
+	float: left;
+	margin-left: 20px;
+}
+.user-info ul li{
+	list-style: none;
+	border-bottom: 1px dashed #eaeaea;
+}
+.user-info ul li label{
+	width: 60px;
+	color: #343233;
+	font:15px/50px "微软雅黑" ;
+}
+.user-info ul li input{
+	border:0px;
+	margin-left:10px;
+	color:#040404 ;
+}
+.user-info 
+.user-info-text
+.calender{
+	background: url(../img/calender.jpg) 160px 2px no-repeat;
+    border: 1px solid #C4C4C4;
+    height: 30px;
+    width: 190px;
+}
+.submit{
+	width: 264px;
+	height: 43px;
+	border-radius:4px;
+	background: #fa3b4a;
+	color: #FFFFff;
+	text-align: center;
+	font: 15px/43px "微软雅黑";
+	margin: 30px auto;
+}
+/*user-info-content end*/
+/*cor-manage start*/
+.user-info 
+.user-info-text
+.summary{
+	height: 200px;
+}
+
+.textarea{
+	display: inline-block !important;
+	width: 400px  !important;
+    margin: 15px 0px 10px 10px;
+}
+.textarea1{
+	display: inline-block !important;
+	width: 400px  !important;
+    margin: 15px 0px 10px 10px;
+}
+
+.summary label{
+	float: left;
+}
+/*cor-manage end*/
