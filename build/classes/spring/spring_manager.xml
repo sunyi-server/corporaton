@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- action -->
+	
+	<!-- 社团管理 -->
+	<bean id="corporationInforAction" class="com.corporation.manager.action.CorporationInforAction"
+	    scope="prototype">
+	    <property name="corporationInforService" ref="corporationInforService"></property>
+	</bean>
+	
+	<!-- 用户申请 -->
+	<bean id="userApplyCorAction" class="com.corporation.manager.action.UserApplyCorAction">
+	     <property name="corporationInforService" ref="corporationInforService"></property>
+	    <property name="userApplyCorService" ref="userApplyCorService"></property>
+	</bean>
+	
+<!-- 	<bean id="corporationManagerAction" class="com.corporation.manager.action.CorporationManagerAction"
+	     scope="prototype">
+	    <property name="corporationManagerService" ref="corporationManagerService"></property>
+	</bean> -->
+	<!-- 拦截器 -->
+	<bean id="corporationRoleInterceptor" class="com.corporation.login.action.CorporationRoleInterceptor">
+		<property name="corporationInforService" ref="corporationInforService"></property>
+	</bean> 
+	<bean id="loginInterceptor" class="com.corporation.login.action.LoginInterceptor">
+		<property name="corporationInforService" ref="corporationInforService"></property>
+	</bean> 
+	<!-- service -->
+	
+	<!-- 社团管理 -->
+	<bean id="corporationInforService" class="com.corporation.manager.service.impl.CorporationInforServiceImpl">
+	    <property name="corporationInforDao" ref="corporationInforDao"></property>
+	</bean>
+	
+	
+	<!-- 用户申请 -->
+	<bean id="userApplyCorService" class="com.corporation.manager.service.impl.UserApplyCorServiceImpl">
+	    <property name="userApplyCorDao" ref="userApplyCorDao"></property>
+	    
+	</bean>
+	
+<!-- 	<bean id="corporationManagerService" class="com.corporation.manager.service.impl.CorporationManagerServiceImpl">
+	   	<property name="corporationManagerDao" ref="corporationManagerDao"></property>
+	</bean> -->
+	
+	
+	
+	<!-- dao -->
+	
+	<!-- 社团管理 -->
+	<bean id="corporationInforDao" class="com.corporation.manager.dao.impl.CorporationInforDaoImpl">
+	    <property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	<!-- 用户申请 -->
+	
+	<bean id="userApplyCorDao" class="com.corporation.manager.dao.impl.UserApplyCorDaoImpl">
+	    <property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+<!-- 	<bean id="corporationManagerDao" class="com.corporation.manager.dao.impl.CorporationManagerDaoImpl">
+	    <property name="sessionFactory" ref="sessionFactory"></property>
+	</bean> -->
+
+</beans>

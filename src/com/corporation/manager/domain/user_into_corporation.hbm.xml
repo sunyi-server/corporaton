@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-11-6 18:55:38 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.corporation.manager.domain.user_into_corporation" table="USER_INTO_CORPORATION">
+        <id name="into_id" type="java.lang.String">
+            <column name="INTO_ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="into_man" type="java.lang.String">
+            <column name="INTO_MAN" />
+        </property>
+        <property name="user_corporation_include" type="java.lang.String">
+            <column name="USER_CORPORATION_INCLUDE" />
+        </property>
+        <property name="into_status" type="java.lang.String">
+            <column name="INTO_STATUS" />
+        </property>
+        <property name="into_time" type="java.lang.String">
+            <column name="INTO_TIME" />
+        </property>
+        <property name="into_gmt_create" type="java.lang.String">
+            <column name="INTO_GMT_CREATE" />
+        </property>
+        <property name="into_gmt_modified" type="java.lang.String">
+            <column name="INTO_GMT_MODIFIED" />
+        </property>
+    </class>
+</hibernate-mapping>

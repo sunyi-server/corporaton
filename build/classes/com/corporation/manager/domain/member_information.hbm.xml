@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-11-1 12:32:35 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.corporation.manager.domain.member_information" table="member_information">
+        <id name="member_id" type="java.lang.String">
+            <column name="MEMBER_ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="member_corporation" type="java.lang.String">
+            <column name="MEMBER_CORPORATION" />
+        </property>
+        <property name="member_name" type="java.lang.String">
+            <column name="MEMBER_NAME" />
+        </property>
+        <property name="member_telephone" type="java.lang.String">
+            <column name="MEMBER_TELEPHONE" />
+        </property>
+        <property name="member_sex" type="java.lang.String">
+            <column name="MEMBER_SEX" />
+        </property>
+        <property name="member_num" type="java.lang.String">
+            <column name="MEMBER_NUM" />
+        </property>
+        <property name="member_birthday" type="java.lang.String">
+            <column name="MEMBER_BIRTHDAY" />
+        </property>
+        <property name="member_college" type="java.lang.String">
+            <column name="MEMBER_COLLEGE" />
+        </property>
+        <property name="member_user" type="java.lang.String">
+            <column name="MEMBER_USER" />
+        </property>
+        <property name="member_major" type="java.lang.String">
+            <column name="MEMBER_MAJOR" />
+        </property>
+        <property name="member_class" type="java.lang.String">
+            <column name="MEMBER_CLASS" />
+        </property>
+        <property name="member_department" type="java.lang.String">
+            <column name="MEMBER_DEPARTMENT" />
+        </property>
+        <property name="member_role" type="java.lang.String">
+            <column name="MEMBER_ROLE" />
+        </property>
+        <property name="member_position" type="java.lang.String">
+            <column name="MEMBER_POSITION" />
+        </property>
+        <property name="member_home_address" type="java.lang.String">
+            <column name="MEMBER_HOME_ADDRESS" />
+        </property>
+        <property name="member_qq" type="java.lang.String">
+            <column name="MEMBER_QQ" />
+        </property>
+        <property name="member_join_time" type="java.lang.String">
+            <column name="MEMBER_JOIN_TIME" />
+        </property>
+        <property name="member_quit_time" type="java.lang.String">
+            <column name="MEMBER_QUIT_TIME" />
+        </property>
+        <property name="member_status" type="java.lang.String">
+            <column name="MEMBER_STATUS" />
+        </property>
+        <property name="member_gmt_create" type="java.lang.String">
+            <column name="MEMBER_GMT_CREATE" />
+        </property>
+        <property name="member_gmt_modified" type="java.lang.String">
+            <column name="MEMBER_GMT_MODIFIED" />
+        </property>
+    </class>
+</hibernate-mapping>

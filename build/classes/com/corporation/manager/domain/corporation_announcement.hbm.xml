@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-11-26 13:46:29 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.corporation.manager.domain.corporation_announcement" table="CORPORATION_ANNOUNCEMENT">
+        <id name="announcement_id" type="java.lang.String">
+            <column name="ANNOUNCEMENT_ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="announcement_name" type="java.lang.String">
+            <column name="ANNOUNCEMENT_NAME" />
+        </property>
+        <property name="announcement_content" type="java.lang.String">
+            <column name="ANNOUNCEMENT_CONTENT" />
+        </property>
+        <property name="announcement_image" type="java.lang.String">
+            <column name="ANNOUNCEMENT_IMAGE" />
+        </property>
+        <property name="announcement_files" type="java.lang.String">
+            <column name="ANNOUNCEMENT_FILES" />
+        </property>
+        <property name="announcement_belone" type="java.lang.String">
+            <column name="ANNOUNCEMENT_BELONE" />
+        </property>
+        <property name="announcement_author" type="java.lang.String">
+            <column name="ANNOUNCEMENT_AUTHOR" />
+        </property>
+        <property name="announcement_stick" type="java.lang.String">
+            <column name="ANNOUNCEMENT_STICK" />
+        </property>
+        <property name="announcement_gmt_create" type="java.lang.String">
+            <column name="ANNOUNCEMENT_GMT_CREATE" />
+        </property>
+        <property name="announcement_gmt_modified" type="java.lang.String">
+            <column name="ANNOUNCEMENT_GMT_MODIFIED" />
+        </property>
+    </class>
+</hibernate-mapping>

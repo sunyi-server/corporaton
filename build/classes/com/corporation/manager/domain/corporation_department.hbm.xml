@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-11-2 15:16:31 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.corporation.manager.domain.corporation_department" table="corporation_department">
+        <id name="department_id" type="java.lang.String">
+            <column name="DEPARTMENT_ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="department_name" type="java.lang.String">
+            <column name="DEPARTMENT_NAME" />
+        </property>
+        <property name="department_include" type="java.lang.String">
+            <column name="DEPARTMENT_INCLUDE" />
+        </property>
+        <property name="department_introduce" type="java.lang.String">
+            <column name="DEPARTMENT_INTRODUCE" />
+        </property>
+        <property name="department_create_time" type="java.lang.String">
+            <column name="DEPARTMENT_CREATE_TIME" />
+        </property>
+        <property name="department_gmt_create" type="java.lang.String">
+            <column name="DEPARTMENT_GMT_CREATE" />
+        </property>
+        <property name="department_gmt_modified" type="java.lang.String">
+            <column name="DEPARTMENT_GMT_MODIFIED" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+
+	<package name="manager" namespace="/manager" extends="struts-default">
+		
+		
+		<!-- 1.配置拦截器 -->
+		<!-- 2.新建拦截器 -->
+		<!-- 3.将系统拦截器和自定义拦截器加入拦截器栈中 -->
+		<!-- 4.在action中配置使用拦截器 -->
+		<!-- 5.定义全局result -->
+		
+		<interceptors>  <!-- 拦截器配置 -->
+            <interceptor name="loginIn"  
+                class="com.corporation.login.action.LoginInterceptor">  
+            </interceptor>  <!-- 新建拦截器 -->
+            <interceptor name="roleIn"  
+                class="com.corporation.login.action.CorporationRoleInterceptor">  
+            </interceptor> <!--  新建拦截器 -->
+            <!-- 拦截器栈 -->  
+            <interceptor-stack name="mydefault">  <!-- 设置拦截器栈 -->
+                <interceptor-ref name="defaultStack" /> <!-- 将系统默认拦截器加入栈中 --> 
+                <interceptor-ref name="loginIn" />  <!-- 将自定义拦截器加入栈中 -->
+                <interceptor-ref name="roleIn" />  <!-- 将自定义拦截器加入栈中 -->
+            </interceptor-stack>  
+            
+            <interceptor-stack name="applyDefault">  <!-- 设置拦截器栈 -->
+                <interceptor-ref name="defaultStack" /> <!-- 将系统默认拦截器加入栈中 --> 
+                <interceptor-ref name="loginIn" />  <!-- 将自定义拦截器加入栈中 -->
+            </interceptor-stack>  
+        </interceptors>  
+  
+        <!-- 定义全局Result -->  
+        <global-results>  
+            <!-- 当返回login视图名时，转入/login.jsp页面 -->  
+            <result name="login">/login.jsp</result>   <!-- 设置全局result -->
+        </global-results>
+        
+        
+  	<!-- 社团管理 -->
+		<action name="manager_*" class="com.corporation.manager.action.CorporationInforAction" method="{1}">
+				<result name="skipToShowMember">/WEB-INF/views/faceUser/corporationMember.jsp</result>
+				<!-- &amp;&号的转义字符 -->
+				<result name="getApplyUserSuccess">/WEB-INF/views/faceUser/corporationUserApplyManager.jsp</result>
+				<result name="addMemberSuccess" type="redirect">manager_showMember?queryMemberStatus=&amp;queryDepartment=&amp;member_corporation=${member_corporation}&amp;queryStartTime=00000-00-00&amp;queryEndTime=9999-99-99&amp;queryName=&amp;timeSort=desc&amp;currPage=1</result>
+				<result name="skipToDepartment">/WEB-INF/views/faceUser/corporationDepartMentMan.jsp</result>
+				<result name="skipToShowMemberManager">
+				    /WEB-INF/views/faceUser/corporationManagerMan.jsp
+				</result>
+				<result name="skipToCorporationInforShow">/WEB-INF/views/faceUser/corporationInfo.jsp</result>
+				<result name="skipToCorporationInfor">
+				    /WEB-INF/views/faceUser/corporationInfoMan.jsp
+				</result>
+				<interceptor-ref name="mydefault" />   <!-- 此action调用默认拦截器栈 -->
+		</action>
+		
+		
+	<!-- 用户申请 -->
+		<action name="apply_*" class="com.corporation.manager.action.UserApplyCorAction" method="{1}">
+				<result name="skipToApply">/WEB-INF/views/faceUser/applyCorporation.jsp</result>
+				<result name="applySuccess" type="redirect">apply_skipToApply?queryName=&amp;currPage=1</result>
+				<result name="skipToUserInfor">/WEB-INF/views/faceUser/userInformationMan.jsp</result>
+				<interceptor-ref name="applyDefault" />   <!-- 此action调用默认拦截器栈 -->
+				<result name="skipToUser">
+				    /WEB-INF/views/faceUser/applyIntoCorporation.jsp
+				</result>
+				<result name="intoIndex">/index.jsp</result>
+				<result name="applyCorporationSuccess" type="redirect">apply_getUserHaveCor</result>
+		</action>
+		
+	</package>
+</struts>

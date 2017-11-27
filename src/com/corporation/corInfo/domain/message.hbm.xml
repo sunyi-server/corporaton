@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-7-22 11:21:48 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+	<class name="com.corporation.corInfo.domain.corporation_message"
+		table="corporation_message">
+
+		<id name="message_id" type="java.lang.String">
+			<column name="message_id" />
+			<generator class="assigned" />
+		</id>
+
+		<property name="corporation_id" type="java.lang.String">
+			<column name="corporation_id" />
+		</property>
+
+		<property name="corporation_name" type="java.lang.String">
+			<column name="corporation_name" />
+		</property>
+
+		<property name="message_content" type="java.lang.String">
+			<column name="message_content" />
+		</property>
+
+		<property name="message_gmt_create" type="java.lang.String">
+			<column name="message_gmt_create" />
+		</property>
+		<property name="message_gmt_modified" type="java.lang.String">
+			<column name="message_gmt_modified" />
+		</property>
+		</class>
+</hibernate-mapping>

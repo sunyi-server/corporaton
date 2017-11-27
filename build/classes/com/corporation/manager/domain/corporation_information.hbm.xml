@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-10-31 13:43:14 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.corporation.manager.domain.corporation_information" table="corporation_information">
+        <id name="corporation_id" type="java.lang.String">
+            <column name="CORPORATION_ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="corporation_name" type="java.lang.String">
+            <column name="CORPORATION_NAME" />
+        </property>
+        <property name="corporation_introduce" type="java.lang.String">
+            <column name="CORPORATION_INTRODUCE" />
+        </property>
+        <property name="corporation_apply_man" type="java.lang.String">
+            <column name="corporation_apply_man" />
+        </property>
+        <property name="corporation_apply_time" type="java.lang.String">
+            <column name="CORPORATION_APPLY_TIME" />
+        </property>
+        <property name="corporation_leader_id" type="java.lang.String">
+            <column name="CORPORATION_LEADER_ID" />
+        </property>
+        <property name="corporation_logo" type="java.lang.String">
+            <column name="corporation_logo" />
+        </property>
+        <property name="corporation_type" type="java.lang.String">
+            <column name="CORPORATION_TYPE" />
+        </property>
+        <property name="corporation_solidify" type="java.lang.String">
+            <column name="CORPORATION_SOLIDIFY" />
+        </property>
+        <property name="corporation_status" type="java.lang.String">
+            <column name="CORPORATION_STATUS" />
+        </property>
+        <property name="corporation_gmt_create" type="java.lang.String">
+            <column name="CORPORATION_GMT_CREATE" />
+        </property>
+        <property name="corporation_gmt_modified" type="java.lang.String">
+            <column name="CORPORATION_GMT_MODIFIED" />
+        </property>
+    </class>
+</hibernate-mapping>

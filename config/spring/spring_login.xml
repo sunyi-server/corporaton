@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="loginAction" class="com.corporation.login.action.loginAcion"  scope="prototype">
+	     <property name="loginService" ref="loginService"></property>
+	</bean>
+	<bean id="loginService" class="com.corporation.login.service.impl.loginServiceImpl">  
+	    <property name="loginDao" ref="loginDao"></property>
+	</bean>
+	<bean id="loginDao" class="com.corporation.login.service.impl.loginDaoImpl">  
+		<property name="sessionFactory" ref="sessionFactory"></property>	    
+	</bean>
+</beans>

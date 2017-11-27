@@ -1,0 +1,9 @@
+eclipse.preferences.version=1
+encoding//WebContent/WEB-INF/views/faceUser/corporationMember.jsp=UTF-8
+encoding//WebContent/css/BackStage.css=UTF-8
+encoding//WebContent/css/add-cor.css=UTF-8
+encoding//WebContent/css/admin.css=UTF-8
+encoding//WebContent/footer.jsp=UTF-8
+encoding//src/com/corporation/corInfo/action/SCorInfo.java=UTF-8
+encoding//src/com/corporation/corInfo/action/UserInfoAction.java=UTF-8
+encoding//src/com/corporation/corInfo/dao/UserInfoDao.java=UTF-8

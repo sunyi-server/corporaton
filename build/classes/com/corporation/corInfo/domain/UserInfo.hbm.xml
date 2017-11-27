@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-10-31 0:07:36 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.corporation.corInfo.domain.UserInfo" table="user_information">
+        <id name="user_id" type="java.lang.String">
+            <column name="user_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="user_name" type="java.lang.String">
+            <column name="user_name" />
+        </property>
+        <property name="user_nickname" type="java.lang.String">
+            <column name="user_nickname" />
+        </property>
+        <property name="user_username" type="java.lang.String">
+            <column name="user_username" />
+        </property>
+        <property name="user_password" type="java.lang.String">
+            <column name="user_password" />
+        </property>
+        <property name="user_logo" type="java.lang.String">
+            <column name="user_logo" />
+        </property>
+        <property name="user_birthday" type="java.lang.String">
+            <column name="user_birthday" />
+        </property>
+        <property name="user_introduce" type="java.lang.String">
+            <column name="user_introduce" />
+        </property>
+        <property name="user_sex" type="java.lang.String">
+            <column name="user_sex" />
+        </property>
+        <property name="user_telephone" type="java.lang.String">
+            <column name="user_telephone" />
+        </property>
+        <property name="user_address" type="java.lang.String">
+            <column name="user_address" />
+        </property>
+        <property name="user_role" type="java.lang.String">
+            <column name="user_role" />
+        </property>
+        <property name="user_gmt_create" type="java.lang.String">
+            <column name="user_gmt_create" />
+        </property>
+        <property name="user_gmt_modified" type="java.lang.String">
+            <column name="user_gmt_modified" />
+        </property>
+    </class>
+</hibernate-mapping>
